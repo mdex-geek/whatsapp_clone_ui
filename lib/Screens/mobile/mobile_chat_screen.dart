@@ -16,12 +16,6 @@ class MobileChatScreen extends StatelessWidget {
         title: Text(
           info[0]['name'] as String,
         ),
-        leading: CircleAvatar(
-          backgroundImage: NetworkImage(
-            info[0]['profilePic'].toString(),
-          ),
-          radius: 5,
-        ),
         centerTitle: false,
         actions: [
           IconButton(
