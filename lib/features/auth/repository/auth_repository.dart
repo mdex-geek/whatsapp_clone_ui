@@ -38,7 +38,7 @@ class AuthRepository {
             arguments: verificationId,
           );
         }),
-        codeAutoRetrievalTimeout: (String verificationId) => {},
+        codeAutoRetrievalTimeout: (String verificationId) {},
       );
     } on FirebaseAuthException catch (e) {
       // Error handling

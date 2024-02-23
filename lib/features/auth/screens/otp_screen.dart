@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_ui/color.dart';
 
 class OTPScreen extends StatefulWidget {
   static const String routeName = '/otp-screen';
@@ -14,6 +15,35 @@ class OTPScreen extends StatefulWidget {
 class _OTPScreenState extends State<OTPScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    final size = MediaQuery.of(context).size;
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Verifying your phone number'),
+        elevation: 0,
+        centerTitle: true,
+        backgroundColor: backgroundColor,
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 20,
+            ),
+            const Text('we have send an sms with a code'),
+            SizedBox(
+              width: size.width * 0.5,
+              child: TextField(
+                decoration: const InputDecoration(
+                  hintText: '- - - - - -',
+                  hintStyle: TextStyle(
+                    fontSize: 30,
+                  ),
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
