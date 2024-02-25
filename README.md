@@ -1,7 +1,6 @@
 # whatsapp_ui
-
-A new Flutter project.
-
+Building the clone of Whatsapp UI and responsive ui it means you can use this clone in your mobile and in your website in the below there is a link of the website you can see
+https://whatsappclonemdex.netlify.app/
 ## Getting Started
 
 This project is a starting point for a Flutter application.
